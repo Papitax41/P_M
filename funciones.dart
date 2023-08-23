@@ -1,10 +1,10 @@
 void main(List<String> args) {
   MostrarMensaje();
-  // print(Suma(5,5));
+  print(Suma(5, 5));
   Multiplicar(5);
 }
 
-MostrarMensaje(){
+MostrarMensaje() {
   print("Hola papita desde una funcion");
 }
 //si voy mostrar algo de tipo entero, la funcion tambien tiene que ser de tipo entero
@@ -21,19 +21,19 @@ MostrarMensaje(){
 //   return n1 + 2;
 // }
 
-// int Suma(int n1,int n2){
-//   print("La suma es: ");
-//   return n1 + n2;
-// }
+int Suma(int n1, int n2) {
+  print("La suma es: ");
+  return n1 + n2;
+}
 
 // double Multiplicar(double n1,double n2){
 //   print("La multiplicacion es: ");
 //   return n1 * n2;
 // }
 
-void Multiplicar(int n1){
+void Multiplicar(int n1) {
   for (int i = 0; i < 13; i++) {
-    int x = n1*i;
+    int x = n1 * i;
     print("$n1 * $i = $x");
   }
 }
