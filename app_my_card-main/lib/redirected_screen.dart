@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'redirected_screen.dart'; // Importa RedirectedScreen desde redirected_screen.dart
 
 void main(List<String> args) {
-  runApp(
-    MyApp(),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -166,5 +163,16 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ...
-
+class RedirectedScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Página Redirigida"),
+      ),
+      body: Center(
+        child: Text("¡Has iniciado sesión con éxito y has sido redirigido!"),
+      ),
+    );
+  }
+}
